@@ -1,0 +1,27 @@
+{
+    "dns": {
+      "port": 53,
+      "default_ttl": 300,
+      "records": {
+        "hello.example.com": "192.168.3.1"
+      },
+      "zones": {
+        "zone-01.exampke": {
+          "records": {
+            "app-01.zone-01.example": "192.168.1.10",
+            "app-01.zone-02.example": "192.168.1.11"
+          }
+        },
+        "zone-02.example": {
+          "records": {
+            "app-01.zone-02.example": "192.168.2.10",
+            "app-02.zone-02.example": "192.168.2.11"
+          }
+        }
+      }
+    }, 
+    "web_ui": {
+      "enabled": false, 
+      "port": 8080
+    }
+  }
